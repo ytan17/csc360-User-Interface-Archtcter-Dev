@@ -1,0 +1,44 @@
+<!--<h2>Contact Us</h2>-->
+  <h3 x-large class="sample-content">Contact Us</h3>
+
+<hr>
+<form (ngSubmit)="submitForm()" [formGroup]="contactForm" novalidate>
+  <div class="form-content">
+    <h3><ins>Phone</ins></h3>
+    <p>123-456-7890</p>
+    <h3><ins>Mail</ins></h3>
+    <p>1 E Jackson Blvd, Chicago, IL 60604</p>
+    <h3><ins>Online</ins></h3>
+    <label>
+      Name:
+      <input type="text" formControlName="name" class="sd-form-control" placeholder="Enter your name.">
+    </label>
+    <label>
+      Email:
+      <input type="email" formControlName="email" class="sd-form-control" placeholder="Enter your email.">
+    </label>
+    <label>
+      Content:
+      <textarea formControlName="content" class="sd-form-control" placeholder="Content here."></textarea>
+    </label>
+    <p><input type="submit"></p>
+    <!--<div class="form-submit">
+      <button type="submit">Submit</button>
+    </div>-->
+  </div>
+</form>
+
+<!--<div class="form-value">
+  Form value:
+  <pre>
+    {{contactForm.value | json}}
+  </pre>
+  <p>
+    Status: {{contactForm.status}}
+  </p>
+  <p>
+    Valid: {{contactForm.valid}}
+  </p>
+  <p>Submit then open console to see full form.</p>
+</div>-->
+

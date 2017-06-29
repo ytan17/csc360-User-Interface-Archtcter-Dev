@@ -1,0 +1,10 @@
+<!--<h3>Popular Currency List:</h3>-->
+<h3 x-large class="sample-content">Popular Currency List:</h3>
+<hr>
+<ul>   
+    <!-- version: Leveraging component -->
+    <app-popular-item
+        *ngFor="let popular of populars" [popular]="popular">
+    </app-popular-item>
+
+</ul>

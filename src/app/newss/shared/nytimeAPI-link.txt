@@ -1,0 +1,21 @@
+http://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json
+
+// Built by LucyBot. www.lucybot.com
+var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+url += '?' + $.param({
+  'api-key': "d70aef6988d34c2b916a07bf4172fffd"
+});
+$.ajax({
+  url: url,
+  method: 'GET',
+}).done(function(result) {
+  console.log(result);
+}).fail(function(err) {
+  throw err;
+})
+
+Problem:
+repo-browser.component.ts -> searchForOrg -> '/newss'
+so need to add the app.routes.ts -> rootRouterConfig -> the children(pattern) are different
+solution: 1. find the pattern of nytime'api
+          2. find another api

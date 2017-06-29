@@ -1,0 +1,62 @@
+<p></p>
+<p>Amount: <input type="number" value="1"></p>
+            <P>Convert From: 
+                <select> 
+                    <option selected>US - Dollar</option>
+                    <option>EUR - Euro</option>
+                    <option>GBP - British Pound</option>
+                    <option>INR - Indian Rupee</option>
+                    <option>AUD - Australian Dollar</option>
+                    <option>CAD - Canadian Dollar</option>
+                    <option>SGD - Singapore Dollar</option>
+                    <option>CHF -Swiss Franc</option>
+                    <option>MYR -Malaysian Ringgit</option>
+                    <option>JPY - Japanese Yen</option>
+                    <option>CNY - Chinese Yuan Renminbi</option>
+                </select>
+            </P>
+            
+            <p>Convert To: 
+                <select>
+                    <option>US - Dollar</option>
+                    <option selected>EUR - Euro</option>
+                    <option>GBP - British Pound</option>
+                    <option>INR - Indian Rupee</option>
+                    <option>AUD - Australian Dollar</option>
+                    <option>CAD - Canadian Dollar</option>
+                    <option>SGD - Singapore Dollar</option>
+                    <option>CHF -Swiss Franc</option>
+                    <option>MYR -Malaysian Ringgit</option>
+                    <option>JPY - Japanese Yen</option>
+                    <option>CNY - Chinese Yuan Renminbi</option>
+                </select>
+            </p>
+            <table border=2 align="center">
+            <tr>
+            <td colspan=4><input name="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text"></td>
+            </tr>
+            <tr>
+            <td><input type=button value="0" OnClick="calc.display.value+='0'"></td>
+            <td><input type=button value="1" OnClick="calc.display.value+='1'"></td>
+            <td><input type=button value="2" OnClick="calc.display.value+='2'"></td>
+            <td><input type=button value="+" OnClick="calc.display.value+='+'"></td>
+            </tr>
+            <tr>
+            <td><input type=button value="3" OnClick="calc.display.value+='3'"></td>
+            <td><input type=button value="4" OnClick="calc.display.value+='4'"></td>
+            <td><input type=button value="5" OnClick="calc.display.value+='5'"></td>
+            <td><input type=button value="-" OnClick="calc.display.value+='-'"></td>
+            </tr>
+            <tr>
+            <td><input type=button value="6" OnClick="calc.display.value+='6'"></td>
+            <td><input type=button value="7" OnClick="calc.display.value+='7'"></td>
+            <td><input type=button value="8" OnClick="calc.display.value+='8'"></td>
+            <td><input type=button value="x" OnClick="calc.display.value+='*'"></td>
+            </tr>
+            <tr>
+            <td><input type=button value="9" OnClick="calc.display.value+='9'"></td>
+            <td><input type=button value="C" OnClick="calc.display.value=''"></td>
+            <td><input type=button value="=" OnClick="calc.display.value=eval(calc.display.value)"></td>
+            <td><input type=button value="/" OnClick="calc.display.value+='/'"></td>
+            </tr>
+            </table>

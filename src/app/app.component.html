@@ -1,0 +1,41 @@
+<h1 align="center">
+  Money Converter
+</h1>
+<nav>
+	<a [routerLink]="['/']"><strong>
+    Home
+  </strong></a>
+  |
+  <a [routerLink]="['/app-popular-list']"><strong>
+    Popular Currency
+  </strong></a>
+  |
+	<a [routerLink]="['/profiles']"><strong>
+    Currency Profiles
+  </strong></a>
+  |
+  <a [routerLink]="['/graph']"><strong>
+    Exchange Rate Trend Graph
+  </strong></a>
+  |
+  <a [routerLink]="['/newss','angular']"><strong>
+    News Repos
+  </strong></a>
+  |
+	<!--<a [routerLink]="['/news']"><strong>
+    News
+  </strong></a>
+  |-->
+	<a [routerLink]="['/contact']"><strong>
+    Contact Us
+  </strong></a>
+</nav>
+
+<main>
+	<router-outlet></router-outlet>
+</main>
+
+
+<footer>
+  © Winter 2017 - CSC360
+</footer>
